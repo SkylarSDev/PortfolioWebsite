@@ -3,99 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CometDev - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Skylar's Bunker</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #ff00ff;
+            font-size: 2.5em;
+            text-shadow: 0 0 5px #ff00ff;
+            margin: 0;
+            display: inline-block;
+        }
+        
+        .star {
+            color: #ff00ff;
+            font-size: 2.5em;
+            vertical-align: middle;
+        }
+
+        .main-content {
+            border: 2px dashed #00ffff;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .welcome-box {
+            background-color: #800080;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-top: 2px solid #ff00ff;
+            border-bottom: 2px solid #ff00ff;
+        }
+        
+        .welcome-box p {
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .left-column {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .right-column {
+            flex: 3;
+            display: flex;
+            gap: 20px;
+        }
+
+        .profile-info, .likes-dislikes {
+            flex: 1;
+        }
+        
+        .profile-info ul, .likes-dislikes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .profile-info li, .likes-dislikes li {
+            margin-bottom: 10px;
+        }
+        
+        .likes-dislikes h3 {
+            color: #ff00ff;
+        }
+        
+        .likes-dislikes .dislikes-list {
+            padding-left: 20px;
+            border-left: 2px dashed #00ffff;
+        }
+        
+        .likes-dislikes .likes-list {
+             padding-right: 20px;
+        }
+
+
+        .public-diary {
+            margin-top: 20px;
+            border: 2px dashed #00ffff;
+            padding: 20px;
+        }
+
+        .public-diary h2 {
+            color: #ff00ff;
+            text-align: center;
+        }
+
+        .diary-entry {
+            margin-top: 15px;
+        }
+
+		a:link {
+			color: #ff00ff;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #ff00ff;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #c400c4;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		a:active {
+			color: #c400c4;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+    </style>
 </head>
 <body>
 
-    <!-- ======== HEADER & BIOGRAPHY ======== -->
-    <header>
-        <!-- Replace "Your Name" with your actual name -->
-        <h1 class="header-name">CometDev</h1>
-        <!-- Write a short biography or professional summary below -->
-        <p class="header-bio">
-            Hey there, welcome to my portfolio. I'm Skylar, and I am a trans woman out of the USA with a fixation on almost anything tech. 
-			Throughout my years, I've found myself working with several coding languages such as <strong>C#</strong>, 
-																								 <strong>Arduino C (simplified mix of C and C++)</strong>, 
-																								 <strong>Python</strong>, <strong>HTML</strong>, 
-																								 and a touch of <strong>Javascript</strong>.
-		    <br>
-		    <br>
-			I started my career somewhere in 2019, after seeing BONEWORKS for the first time. Since then, I've been fascinated by VR and what exactly it can do for people.
-			I've had very few chances to actually <em>release</em> a game, so most of what you'll find here are the many tech demos I've thrown together to learn and experiment over the years.
-			<br>
-			<br>
-			As a fun sidenote, any and all media seen here is hosted from my homelab server running Windows 10 and Copyparty fit with a Nexsan JBOD :3
-		</p>
-    </header>
-
-    <!-- ======== PORTFOLIO GRID ======== -->
-    <main>
-        <div class="portfolio-grid">
-
-            <a href="project-detail-page-1.html" class="portfolio-link">
-            <div class="portfolio-item">
-                <img src="photos\FNAFR\signsmall.png">
-                <div class="project-details">
-                    <h3>FNaF: Reincarnation (working title)</h3>
-                    <p>An in-dev VRChat world that is a port of Five Nights at Freddy's 1 with some extra flair to make it less boring and more VR-Centric. Planned early access is October 2025</p>
-                </div>
-            </div>
-			</a>
-
-			<a href="https://store.steampowered.com/app/2481930?snr=5000_5100__" class="portfolio-link">
-            <div class="portfolio-item">
-                <!-- Replace with your project image. Use a square image (e.g., 600x600px) for best results -->
-                <img src="photos\Scamper\thumb.png" alt="Scamper's logo.">
-                <div class="project-details">
-                    <h3>Scamper by Bezbro Games</h3>
-                    <p>Scamper was the first released game that I got the chance to work on. 
-					I helped in writing the original multiplayer update, as well as assist in re-writing the game from scratch for update v20 onward. 
-					I still work on this to this day! :D
-					
-					<br>
-					<br>
-					 
-					Unfortunately, I'm not allowed to show much BTS on this project, so it just links to the steam page.</p>
-                </div>
-            </div>
-			</a>
-
-            <div class="portfolio-item">
-                <img src="photos\PortablePhysicsPlayer\thumbnail.png">
-                <div class="project-details">
-                    <h3>Portable Physics Player</h3>
-                    <p>A proposed, as the name suggests, Portable Physics Player that I could use across my future projects. It was using a "Floaty Rig" as its base and, all aroud, was pretty neat. Never quite got finshed, and I ended up gutting it for parts at some point, leaving it unusable. I plan to revisit this someday.</p>
-                </div>
-            </div>
-			
-			<a href="project-detail-page-1.html" class="portfolio-link">
-            <div class="portfolio-item">
-                <img src="photos\Epsilon11\thumb.png">
-                <div class="project-details">
-                    <h3>Epsilon 11</h3>
-                    <p>An SCP Shooter game that aimed to focus on and highlight the horrors that come with being an MTF agent. It was here that I first prototyped what I dub "Physics Based Networking" with advice from DrewMileham.</p>
-                </div>
-            </div>
-			</a>
-			
-            
-			<a href="project-detail-page-1.html" class="portfolio-link">
-            <div class="portfolio-item">
-                <img src="photos\missing.png">
-                <div class="project-details">
-                    <h3>IntenseStress</h3>
-                    <p>My first ever game project. It's original scope was to be a 4 player co-op survival game a-la "The Long Dark", but due to my inexperience, it obviously never took off the ground. I've yet to give up on the dream though. One day! At this current moment, however, I have no media of it. :[</p>
-                </div>
-            </div>
-			</a>
-            <!-- Add more portfolio items by copying and pasting the block above -->
-
+    <div class="container">
+        <header>
+            <span class="star">★</span>
+            <h1>Skylar's Bunker</h1>
+            <span class="star">★</span>
+        </header>
+        
+        <div class="welcome-box">
+             <p>XOXO Welcome to my totally cool portfolio XOXO</p>
         </div>
-    </main>
+
+        <div class="main-content">
+            <div class="left-column">
+                <img src="photos/IMG_7637_ICO.png" alt="A cool picture of me">
+            </div>
+            <div class="right-column">
+                <div class="profile-info">
+                    <ul>
+                        <li><strong>Name:</strong> Skylar </li>
+                        <li><strong>Pseudonym:</strong> CometDev </li>
+                        <li><strong>Age:</strong> 17</li>
+                        <li><strong>DOB:</strong> Nov. 6th 2007</li>
+                        <li><strong>Pronouns:</strong> She/Her</li>
+                        <li><strong>Specialties:</strong> Unity Engine, C#</li>
+                        <li><strong>Hobbies:</strong> Hardware Development, 3D Modeling, Sim-Racing, Sim-Flying, Karaoke, VRChat</li>
+                        <li><strong>PC Specs:</strong> Intel i9-9900KF, 64GB DDR4, RTX 2080ti, 5.5TB Storage.</li>
+                        <li><strong>VR Specs:</strong> Meta Quest 3 modded with Eye Tracking and Finger Tracked Controllers.</li>
+						<br>
+                        <li><strong>About:</strong> Hi! I'm Skylar. I'm a Trans Woman living in the United States. I started experimenting with the Unity Game Engine in 2019, after getting my first desktop PC, and I dropped out in 2023 at 16 to pursue game development and programming as my career.</li>
+						<br>
+						<br>
+						<li><strong>Socials:</strong> <strong><a href="https://x.com/cometmbpkg">Twitter</a></strong>, <strong><a href="https://www.youtube.com/@cometmbpkg">Youtube</a></strong></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="public-diary">
+            <h2>Public Diary:</h2>
+			
+			
+            <div class="diary-entry">
+                <strong>10/10/2025</strong> - Website Started Development (finally).
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>08/10/2025</strong> - Began development on <strong><a href="example.com">Five Nights at Freddy's: Reincarnation</a></strong>. A FNaF 1 Fangame in the form of a VRChat world.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>08/10/2025</strong> - Began development on <strong><a href="example.com">Dandy's World in VRChat</a></strong>. A fully-fledged port of Dandy's World in VRChat.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>06/20/2025</strong> - Released my third VRChat Avatar, a port of LukaszModeler's Serial Designation J on my <strong><a href="https://payhip.com/CometDevsShop">Payhip</a></strong> in partnership with Lukasz.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>06/19/2025</strong> - Released my second VRChat Avatar, a port of LukaszModeler's Serial Designation V on my <strong><a href="https://payhip.com/CometDevsShop">Payhip</a></strong> in partnership with Lukasz.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>05/19/2025</strong> - Released my first VRChat Avatar, a port of LukaszModeler's Serial Designation N on my <strong><a href="https://payhip.com/CometDevsShop">Payhip</a></strong> in partnership with Lukasz.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>04/22/2024</strong> - Began work on <strong><a href="https://store.steampowered.com/app/2481930/Scamper/">Scamper</a> by <a href="https://bezbrogames.com/">Bezbro Games</a></strong> full time to help port the game over to Fish Networking and assist in developing the v20 updates and any other updates onward.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>10/17/2025</strong> - While working on Scamper, I experimented with <strong><a href="example.com">Portable Physics Player</a></strong>, a floating player controller that was designed to be modular enough to fit cleanly into any project it could be used for.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>10/10/2023</strong> - First Job! I was hired on by Bezbro to work on <strong><a href="https://store.steampowered.com/app/2481930/Scamper/">Scamper</a> by <a href="https://bezbrogames.com/">Bezbro Games</a></strong> and give it Multiplayer for a halloween update.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>10/01/2023</strong> - Began work on <strong><a href="example.com">Epsilon 11 VR</a></strong>, a (cancelled as of 2025) psychological horror shooter where you play as an MTF Agent in 4-player co-op.
+            </div>
+			<br>
+			<div class="diary-entry">
+                <strong>Pre-2023</strong> - Before 2023 I was working on a project, the working title being "Intense Stress". It was a survival 4-player co-op game built around being a sandbox with as much shit as possible. Still a game I hope to make.
+            </div>
+             <!-- Add more diary entries here -->
+        </div>
+    </div>
 
 </body>
 </html>
