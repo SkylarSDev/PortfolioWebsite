@@ -13,9 +13,23 @@
             padding: 20px;
         }
 
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: -30px;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+		}
+
         .container {
             max-width: 900px;
+			bottom: 0;
             margin: 0 auto;
+            /* This adds a semi-transparent background to the content area to make text readable */
+            background-color: rgba(0, 0, 0, 0.75); 
+            padding: 20px;
+            border-radius: 15px; /* Optional: adds rounded corners */
         }
 
         header {
@@ -94,6 +108,10 @@
     </style>
 </head>
 <body>
+	<video autoplay muted loop id="myVideo">
+		<source src="https://shared.fastly.steamstatic.com/community_assets/images/items/2861720/85882f90ad8ca69467610883a9fa95ecc2f071ab.webm" type="video/mp4">
+	</video>
+
 
     <div class="container">
         <header>
