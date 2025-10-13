@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<video autoplay muted loop id="myVideo">
+		<source src="https://shared.fastly.steamstatic.com/community_assets/images/items/2861720/85882f90ad8ca69467610883a9fa95ecc2f071ab.webm" type="video/mp4">
+	</video>
+
+    <div class="projects-container">
+        <header>
+            <span class="star">★</span>
+            <h1>Skylar's Projects</h1>
+            <span class="star">★</span>
+        </header>
+
+        <nav>
+            <p style="text-align: center; font-size: 25px;"><a href="index.html">&lt;&lt; Back to Home</a></p>
+        </nav>
+
+        <div class="other-stuff">
+            <div class="filter-buttons">
+				<button class="filter-btn active" data-filter="all">All</button>
+				<button class="filter-btn" data-filter="vr">VR</button>
+				<button class="filter-btn" data-filter="game">Game</button>
+				<button class="filter-btn" data-filter="tool">Tool</button>
+				<button class="filter-btn" data-filter="prototype">Prototype</button>
+				<button class="filter-btn" data-filter="mod">Mod</button>
+			</div>
+			
+			<div class="projects-grid">
+			
+				<!-- TakedownVR -->
+				<div class="project-card" data-category="game vr">
+					<div class="project-image-placeholder">
+						<h2>TakedownVR</h2>
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">TakedownVR <span class="project-date">(2025-Present)</span></h3>
+						<p class="project-description">This game is one of the first games under my studio, a VR movement shooter inspired by games such as Project Impulse and Team Fortress 2. I'm the one doing most of the programming and general work overall.</p>
+					</div>
+					<div class="project-tags">
+						<span class="tag">Game</span>
+						<span class="tag">VR</span>
+					</div>
+				</div>
+			
+				<!-- Five Nights at Freddy's: Reincarnation -->
+				<div class="project-card" data-category="game vr mod">
+					<div class="project-image">
+						<img src="photos\FNAFR\1.png" alt="Five Nights at Freddy's: Reincarnation">
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">Five Nights at Freddy's: Reincarnation <span class="project-date">(2025-Present)</span></h3>
+						<p class="project-description">A re-creation of the original Five Nights at Freddy's in VRChat with a few extra features for the unique flare and to keep the game from feeling too monotonous.</p>
+					</div>
+					<div class="project-tags">
+						<span class="tag">Game</span>
+						<span class="tag">VR</span>
+						<span class="tag">Mod</span>
+					</div>
+				</div>
+			
+				<!-- Murder Drones VRC -->
+				<div class="project-card" data-category="mod">
+					<div class="project-image">
+						<img src="photos\MurderDronesVRC\1.png" alt="Murder Drones VRC">
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">Murder Drones VRC <span class="project-date">(2025-Present)</span></h3>
+						<p class="project-description">This project is unlike the others in this list. This project is a group of VRChat avatars I ported from Blender to VRChat, first as a passion project, but now as a partnership between LukaszModeler and I.</p>
+					</div>
+					<div class="project-tags">
+						<span class="tag">Mod</span>
+					</div>
+				</div>
+			
+				<!-- Dandy's World VRC -->
+				<div class="project-card" data-category="game vr mod">
+					<div class="project-image-placeholder">
+						<h2>Dandy's World VRC</h2>
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">Dandy's World VRC <span class="project-date">(2025-Present)</span></h3>
+						<p class="project-description">A port of the Roblox game Dandy's World to VRChat, a project of pure passion from me and a few friends of mine. It aims to re-create Dandy's World as faithfully as possible while increasing the horror factor by including our own custom redesigns.</p>
+					</div>
+					<div class="project-tags">
+						<span class="tag">Game</span>
+						<span class="tag">VR</span>
+						<span class="tag">Mod</span>
+					</div>
+				</div>
+			
+				<!-- Scamper -->
+				<div class="project-card" data-category="game vr">
+					<div class="project-image">
+						<img src="photos\Scamper\1.png" alt="Scamper">
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">Scamper <span class="project-date">(2024-Present)</span></h3>
+						<p class="project-description">A horrifying VR experience centered around Rats and Monsters. My job was a little bit of everything ranging from networking to helping re-write the entire game from the ground up to helping maintain and implement any features I could.</p>
+					</div>
+					<div class="project-tags">
+						<span class="tag">Game</span>
+						<span class="tag">VR</span>
+					</div>
+				</div>
+				
+				<!-- Portable Physics Player -->
+				<div class="project-card" data-category="prototype vr">
+					<div class="project-image-placeholder">
+						<h2>Portable Physics Player</h2>
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">Portable Physics Player <span class="project-date">(2025-Present)</span></h3>
+						<p class="project-description">The intent of this was to have a portable framework I could just throw around and rapidly develop projects with. It ended up going unfinished because the Unity Project corrupted. Maybe one day.</p>
+					</div>
+					<div class="project-tags">
+						<span class="tag">VR</span>
+						<span class="tag">Prototype</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="project.js"></script>
+    </div>
+
+</body>
+</html>

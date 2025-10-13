@@ -1,0 +1,336 @@
+body {
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* This is the key property */
+			z-index: -1; /* Puts the video behind other content */
+		}	
+
+        .container {
+            max-width: 900px;
+			bottom: 0;
+            margin: 0 auto;
+            /* This adds a semi-transparent background to the content area to make text readable */
+            background-color: rgba(0, 0, 0, 0.75); 
+            padding: 20px;
+            border-radius: 15px; /* Optional: adds rounded corners */
+        }
+		
+		.projects-container {
+            max-width: 1200px;
+			bottom: 0;
+            margin: 0 auto;
+            /* This adds a semi-transparent background to the content area to make text readable */
+            background-color: rgba(0, 0, 0, 0.75); 
+            padding: 20px;
+            border-radius: 15px; /* Optional: adds rounded corners */
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #ff00ff;
+            font-size: 2.5em;
+            text-shadow: 0 0 5px #ff00ff;
+            margin: 0;
+            display: inline-block;
+        }
+        
+        .star {
+            color: #ff00ff;
+            font-size: 2.5em;
+            vertical-align: middle;
+        }
+
+        .main-content {
+            border: 2px dashed #00ffff;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+		
+		.other-stuff {
+            margin-top: 20px;
+            border: 2px dashed #00ffff;
+            padding: 20px;
+        }
+		
+		.other-stuff h1 {
+            color: #ff00ff;
+            text-align: center;
+			text-shadow: 0 0 5px #ff00ff;
+        }
+
+		.other-stuff h2 {
+            color: #ff00ff;
+            text-align: center;
+			text-shadow: 0 0 5px #ff00ff;
+        }
+
+        .welcome-box {
+            background-color: #800080;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-top: 2px solid #ff00ff;
+            border-bottom: 2px solid #ff00ff;
+        }
+        
+        .welcome-box p {
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .left-column {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .right-column {
+            flex: 3;
+            display: flex;
+            gap: 20px;
+        }
+
+        .profile-info, .likes-dislikes {
+            flex: 1;
+        }
+        
+        .profile-info ul, .likes-dislikes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .profile-info li, .likes-dislikes li {
+            margin-bottom: 10px;
+        }
+        
+        .likes-dislikes h3 {
+            color: #ff00ff;
+        }
+        
+        .likes-dislikes .dislikes-list {
+            padding-left: 20px;
+            border-left: 2px dashed #00ffff;
+        }
+        
+        .likes-dislikes .likes-list {
+             padding-right: 20px;
+        }
+		
+        .diary-entry {
+            margin-top: 15px;
+        }
+		
+		.diary-entry {
+            margin-bottom: 25px; /* Added more space between entries */
+            padding-bottom: 15px; /* Added padding to the bottom */
+            border-bottom: 1px solid #444; /* Added a separator line */
+        }
+		
+		.diary-entry strong {
+            color: #ff00ff; /* Made the date stand out */
+            margin-bottom: 5px;
+        }
+		
+		.diary-entry:last-child {
+            border-bottom: none; /* Removes the line from the last entry */
+        }
+
+		a:link {
+			color: #ff00ff;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #ff00ff;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #c400c4;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		a:active {
+			color: #c400c4;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		
+		.button-container {
+			display: flex; /* This is the key part! It aligns the buttons in a row. */
+			justify-content: center; /* This will center the group of buttons on the page. */
+			gap: 20px; /* This adds a 20px space between each button. */
+			margin-top: 20px; /* Adds some space above the button group. */
+		}
+
+		/* The button style from before (no changes needed) */
+		.skylar-button {
+			background-color: #1a1a2e; /* Dark blue background */
+			border: 2px dotted #00ffff; /* Cyan dotted border */
+			color: #ff00ff; /* Bright pink text */
+			padding: 10px 20px;
+			font-family: 'Courier New', Courier, monospace; /* A common pixel-style font */
+			font-size: 16px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.3s ease; /* Smooth transition for hover effect */
+		}
+
+		.skylar-button:hover {
+			background-color: #ff00ff; /* Pink background on hover */
+			color: #1a1a2e; /* Dark blue text on hover */
+			box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
+		}
+		
+		.row {
+			display: flex;
+		}
+
+		.column {
+			flex: 33.33%;
+			padding: 5px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		.filter-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			margin-bottom: 40px;
+		}
+
+		.filter-btn {
+			background-color: #1a1a2e; /* Dark blue background */
+			border: 2px dotted #00ffff; /* Cyan dotted border */
+			color: #ff00ff; /* Bright pink text */
+			padding: 10px 20px;
+			font-family: 'Courier New', Courier, monospace; /* A common pixel-style font */
+			font-size: 16px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.3s ease; /* Smooth transition for hover effect */
+		}
+
+		.filter-btn:hover {
+			background-color: #ff00ff; /* Pink background on hover */
+			color: #1a1a2e; /* Dark blue text on hover */
+			box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
+		}
+
+		.filter-btn.active {
+			background-color: #ff00ff;
+			color: #1a1a2e; 
+			box-shadow: 0 0 10px #ff00ff;
+		}
+		
+		.projects-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			gap: 30px;
+		}
+
+		.project-card {
+			background-color: rgba(0, 0, 0, 0.75);
+			border: 2px solid var(--border-color);
+			border-radius: 15px;
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			display: flex;
+			flex-direction: column;
+			--glow-color: #4A90E2; /* Default glow color */
+		}
+
+		.project-card:hover {
+			transform: translateY(-5px);
+			border-color: var(--glow-color);
+			box-shadow: 0 0 15px var(--glow-color), 0 0 5px var(--glow-color) inset;
+		}
+
+		.project-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.project-image-placeholder {
+			height: 170px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #2a2a4a;
+		}
+
+		.project-image-placeholder h2 {
+			font-size: 1.5em;
+			color: #e0e0e0;
+			margin: 0;
+		}
+
+		.project-content {
+			padding: 20px;
+			flex-grow: 1;
+		}
+
+		.project-title {
+			margin-top: 0;
+			font-size: 1.4em;
+			font-weight: 700;
+		}
+
+		.project-date {
+			color: #00BCD4;
+			font-weight: 400;
+		}
+
+		.project-description {
+			font-size: 0.9em;
+			line-height: 1.6;
+			margin-bottom: 0;
+		}
+
+		.project-tags {
+			padding: 0 20px 20px;
+			display: flex;
+			gap: 10px;
+			align-self: flex-start;
+		}
+
+		.tag {
+			background-color: #333;
+			color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 0.8em;
+		}

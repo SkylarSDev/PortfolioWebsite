@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="teststyle.css">
+</head>
+<body>
+
+    <div class="portfolio-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="vr">VR</button>
+            <button class="filter-btn" data-filter="game-jam">Game Jam</button>
+            <button class="filter-btn" data-filter="tool">Tool</button>
+            <button class="filter-btn" data-filter="prototype">Prototype</button>
+            <button class="filter-btn" data-filter="mod">Mod</button>
+            <button class="filter-btn" data-filter="game">Game</button>
+            <button class="filter-btn" data-filter="flash-game">Flash Game</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="game vr">
+                <div class="project-image">
+                    <img src="https://i.imgur.com/8n22c81.png" alt="Project Demigod">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Project Demigod <span class="project-date">(2025-Present)</span></h3>
+                    <p class="project-description">My contributions to this physics-driven VR superhero sandbox include networking architecture, VR-specific shader optimization, ragdoll physics enhancements, and general performance improvements.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Game</span>
+                    <span class="tag">VR</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game" style="--glow-color: #E91E63;">
+                <div class="project-image-placeholder">
+                    <h2>MakeupBeachSudoku</h2>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MakeupBeachSudoku <span class="project-date">(2025)</span></h3>
+                    <p class="project-description">A mobile-first Sudoku recreation built in Phaser 3, inspired by classic makeup-themed girl games from Cosmopolitan.com.</p>
+                </div>
+                 <div class="project-tags">
+                    <span class="tag" style="background-color: #E91E63;">Game</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="prototype" style="--glow-color: #FF9800;">
+                <div class="project-image-placeholder">
+                    <h2 style="color: #FF9800;">PizzaPachinko</h2>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">PizzaPachinko <span class="project-date">(2025)</span></h3>
+                    <p class="project-description">A heavily 'juiced' vanilla JS reimagining of the classic 'Pizza Pachinko' minigame from the Papa Louie series.</p>
+                </div>
+                 <div class="project-tags">
+                    <span class="tag" style="background-color: #FF9800;">Prototype</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="prototype" style="--glow-color: #00BCD4;">
+                <div class="project-image-placeholder">
+                    <h2 style="color: #00BCD4;">ShortPath</h2>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ShortPath <span class="project-date">(2025)</span></h3>
+                    <p class="project-description">A vanilla JS visualizer exploring the 2025 Duan-Mao pathfinding breakthrough that bypasses Dijkstra's 40-year sorting bottleneck.</p>
+                </div>
+                 <div class="project-tags">
+                    <span class="tag" style="background-color: #00BCD4;">Prototype</span>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="prototype" style="--glow-color: #9C27B0;">
+                <div class="project-image">
+                    <img src="https://i.imgur.com/uJ2G5V5.png" alt="VibeSpace">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">VibeSpace <span class="project-date">(2025)</span></h3>
+                    <p class="project-description">An interactive 3D space flight prototype using Three.js. Features a procedurally generated universe, a web worker for performance, and a "boosty" autopilot.</p>
+                </div>
+                 <div class="project-tags">
+                    <span class="tag" style="background-color: #9C27B0;">Prototype</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

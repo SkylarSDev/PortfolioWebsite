@@ -4,181 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skylar's Bunker</title>
-    <style>
-        body {
-            color: #fff;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-        }
-
-		#myVideo {
-			position: fixed;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover; /* This is the key property */
-			z-index: -1; /* Puts the video behind other content */
-		}	
-
-        .container {
-            max-width: 900px;
-			bottom: 0;
-            margin: 0 auto;
-            /* This adds a semi-transparent background to the content area to make text readable */
-            background-color: rgba(0, 0, 0, 0.75); 
-            padding: 20px;
-            border-radius: 15px; /* Optional: adds rounded corners */
-        }
-
-        header {
-            text-align: center;
-            padding: 10px 0;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            color: #ff00ff;
-            font-size: 2.5em;
-            text-shadow: 0 0 5px #ff00ff;
-            margin: 0;
-            display: inline-block;
-        }
-        
-        .star {
-            color: #ff00ff;
-            font-size: 2.5em;
-            vertical-align: middle;
-        }
-
-        .main-content {
-            border: 2px dashed #00ffff;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .welcome-box {
-            background-color: #800080;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-top: 2px solid #ff00ff;
-            border-bottom: 2px solid #ff00ff;
-        }
-        
-        .welcome-box p {
-            margin: 0;
-            color: #fff;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .left-column {
-            flex: 2;
-            min-width: 300px;
-        }
-
-        .left-column img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .right-column {
-            flex: 3;
-            display: flex;
-            gap: 20px;
-        }
-
-        .profile-info, .likes-dislikes {
-            flex: 1;
-        }
-        
-        .profile-info ul, .likes-dislikes ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .profile-info li, .likes-dislikes li {
-            margin-bottom: 10px;
-        }
-        
-        .likes-dislikes h3 {
-            color: #ff00ff;
-        }
-        
-        .likes-dislikes .dislikes-list {
-            padding-left: 20px;
-            border-left: 2px dashed #00ffff;
-        }
-        
-        .likes-dislikes .likes-list {
-             padding-right: 20px;
-        }
-
-
-        .public-diary {
-            margin-top: 20px;
-            border: 2px dashed #00ffff;
-            padding: 20px;
-        }
-
-        .public-diary h2 {
-            color: #ff00ff;
-            text-align: center;
-        }
-
-        .diary-entry {
-            margin-top: 15px;
-        }
-		
-		.diary-entry {
-            margin-bottom: 25px; /* Added more space between entries */
-            padding-bottom: 15px; /* Added padding to the bottom */
-            border-bottom: 1px solid #444; /* Added a separator line */
-        }
-		
-		.diary-entry strong {
-            color: #ff00ff; /* Made the date stand out */
-            margin-bottom: 5px;
-        }
-		
-		.diary-entry:last-child {
-            border-bottom: none; /* Removes the line from the last entry */
-        }
-
-		a:link {
-			color: #ff00ff;
-			background-color: transparent;
-			text-decoration: none;
-		}
-
-		a:visited {
-			color: #ff00ff;
-			background-color: transparent;
-			text-decoration: none;
-		}
-
-		a:hover {
-			color: #c400c4;
-			background-color: transparent;
-			text-decoration: underline;
-		}
-
-		a:active {
-			color: #c400c4;
-			background-color: transparent;
-			text-decoration: underline;
-		}
-
-    </style>
-	
+	<link rel="stylesheet" href="style.css">
 	<meta property="og:title" content="Skylar's Bunker">
         <meta property="og:description" content="My Portfolio">
-        <meta property="og:image" content="photos/IMG_7637_ICO.png">
         
 </head>
 <body>
@@ -224,6 +52,16 @@
             </div>
         </div>
 
+		<div class="other-stuff">
+			<h1>Check out the other pages:</h1>
+			
+			<div class="button-container">
+				<a href="projects.html"><button class="skylar-button">Projects</button></a>
+				<button class="skylar-button">Blog</button>
+				<button class="skylar-button">Contact</button>
+			</div>
+		</div>
+<!--
         <div class="public-diary">
             <h2>Public Diary:</h2>
 			
@@ -275,9 +113,11 @@
 			<div class="diary-entry">
                 <strong>Pre-2023</strong> - Before 2023 I was working on a project, the working title being "Intense Stress". It was a survival 4-player co-op game built around being a sandbox with as much shit as possible. Still a game I hope to make.
             </div>
-             <!-- Add more diary entries here -->
+            -->
         </div>
     </div>
+	
+
 
 </body>
 </html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg-color: #16213e;
+    --text-color: #e0e0e0;
+    --accent-color: #9b59b6;
+    --border-color: #0f3460;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    --glow-color: #4A90E2; /* Default glow color */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--glow-color);
+    box-shadow: 0 0 15px var(--glow-color), 0 0 5px var(--glow-color) inset;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-image-placeholder {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a4a;
+}
+
+.project-image-placeholder h2 {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.project-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.project-title {
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.project-date {
+    color: #00BCD4;
+    font-weight: 400;
+}
+
+.project-description {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.project-tags {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.tag {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}

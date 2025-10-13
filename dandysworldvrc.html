@@ -4,109 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dandy's World VRC</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-        }
-
-		#myVideo {
-			position: fixed;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover; /* This is the key property */
-			z-index: -1; /* Puts the video behind other content */
-		}	
-
-        .container {
-            max-width: 900px;
-			bottom: 0;
-            margin: 0 auto;
-            /* This adds a semi-transparent background to the content area to make text readable */
-            background-color: rgba(0, 0, 0, 0.75); 
-            padding: 20px;
-            border-radius: 15px; /* Optional: adds rounded corners */
-        }
-
-        header {
-            text-align: center;
-            padding: 10px 0;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            color: #ff00ff;
-            font-size: 2.5em;
-            text-shadow: 0 0 5px #ff00ff;
-            margin: 0;
-            display: inline-block;
-        }
-        
-        .star {
-            color: #ff00ff;
-            font-size: 2.5em;
-            vertical-align: middle;
-        }
-        
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        nav a {
-            color: #00ffff;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .public-diary {
-            margin-top: 20px;
-            border: 2px dashed #00ffff;
-            padding: 20px;
-        }
-
-        .public-diary h2 {
-            color: #ff00ff;
-            text-align: center;
-            font-size: 2em;
-            margin-top: 0;
-        }
-
-        .diary-entry {
-            margin-bottom: 25px; /* Added more space between entries */
-            padding-bottom: 15px; /* Added padding to the bottom */
-            border-bottom: 1px solid #444; /* Added a separator line */
-        }
-        
-        .diary-entry:last-child {
-            border-bottom: none; /* Removes the line from the last entry */
-        }
-
-        .diary-entry strong {
-            color: #ff00ff; /* Made the date stand out */
-            display: block; /* Puts the date on its own line */
-            margin-bottom: 5px;
-        }
-		
-		.row {
-			display: flex;
-		}
-
-		.column {
-			flex: 33.33%;
-			padding: 5px;
-		}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -125,8 +23,8 @@
             <a href="index.html">&lt;&lt; Back to Home</a>
         </nav>
 
-        <div class="public-diary">
-            <h2>Dandy's World VRC</h2>
+        <div class="other-stuff">
+            <h1>Dandy's World VRC</h1>
             
             <p style="text-align: center;"><strong>Dandy's World VRC</strong> is a port of Dandy's World by BlushCrunch Studio made entirely in VRChat using Udon and Unity. This project is a passion project and collaboration between myself and several others with the goal of bringing a game we all love to a platform we all spend a lot of time in. On this project, I am the one doing the entire Unity side of things, including the programming. :3</p>
 			
