@@ -207,7 +207,7 @@ body {
 		.skylar-button:hover {
 			background-color: #ff00ff; /* Pink background on hover */
 			color: #1a1a2e; /* Dark blue text on hover */
-			box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
+			/* box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
 		}
 		
 		.row {
@@ -242,18 +242,21 @@ body {
 			text-transform: uppercase;
 			cursor: pointer;
 			transition: all 0.3s ease; /* Smooth transition for hover effect */
+			font-weight: bold;
 		}
 
 		.filter-btn:hover {
 			background-color: #ff00ff; /* Pink background on hover */
 			color: #1a1a2e; /* Dark blue text on hover */
-			box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
+			font-weight: bold;
+			/*box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
 		}
 
 		.filter-btn.active {
 			background-color: #ff00ff;
 			color: #1a1a2e; 
-			box-shadow: 0 0 10px #ff00ff;
+			font-weight: bold;
+			/*box-shadow: 0 0 10px #ff00ff;*/
 		}
 		
 		.projects-grid {
