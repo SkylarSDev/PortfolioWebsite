@@ -201,6 +201,7 @@ body {
 			text-transform: uppercase;
 			cursor: pointer;
 			transition: all 0.3s ease; /* Smooth transition for hover effect */
+			font-weight: bold;
 		}
 
 		.skylar-button:hover {
