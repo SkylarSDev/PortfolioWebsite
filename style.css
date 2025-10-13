@@ -205,7 +205,7 @@ body {
 		}
 
 		.skylar-button:hover {
-			background-color: #ff00ff; /* Pink background on hover */
+			background-color: #00ffff; /* Pink background on hover */
 			color: #1a1a2e; /* Dark blue text on hover */
 			/* box-shadow: 0 0 10px #ff00ff; /* Adds a pink glow */
 		}
