@@ -4,120 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skylar's Bunker</title>
-	<link rel="stylesheet" href="style.css">
-	<meta property="og:title" content="Skylar's Bunker">
-        <meta property="og:description" content="My Portfolio">
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<video autoplay muted loop id="myVideo">
-		<source src="https://shared.fastly.steamstatic.com/community_assets/images/items/2861720/85882f90ad8ca69467610883a9fa95ecc2f071ab.webm" type="video/mp4">
-	</video>
-	
-    <div class="container">
-        <header>
-            <span class="star">★</span>
+<!-- STARFIELD -->
+<div class="starfield" id="starfield"></div>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">★ SKYLAR'S BUNKER ★</div>
+    <ul class="nav-links">
+        <li><a href="#home" class="active" data-section="home">Home</a></li>
+        <li><a href="#blog" data-section="blog">Blog</a></li>
+        <li><a href="#projects" data-section="projects">Projects</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN -->
+<div class="wrapper">
+
+    <!-- ====== HOME ====== -->
+    <section id="section-home">
+        <div class="hero">
+            <div class="stars-row">★ ★ ★</div>
             <h1>Skylar's Bunker</h1>
-            <span class="star">★</span>
-        </header>
-        
-        <div class="welcome-box">
-             <p>XOXO Welcome to my totally cool portfolio XOXO</p>
+            <div class="stars-row">★ ★ ★</div>
+            <p class="subtitle">XOXO Welcome to my totally cool portfolio XOXO</p>
         </div>
 
-        <div class="main-content">
-            <div class="left-column">
-                <img src="photos/IMG_7637_ICO.png" alt="A cool picture of me">
-            </div>
-            <div class="right-column">
-                <div class="profile-info">
-                    <ul>
-                        <li><strong>Name:</strong> Skylar </li>
-                        <li><strong>Pseudonym:</strong> CometDev </li>
-                        <li><strong>Age:</strong> 18</li>
-                        <li><strong>DOB:</strong> Nov. 6th 2007</li>
-                        <li><strong>Pronouns:</strong> She/Her</li>
-                        <li><strong>Specialties:</strong> Unity Engine, C#</li>
-                        <li><strong>Hobbies:</strong> Hardware Development, 3D Modeling, Sim-Racing, Sim-Flying, Karaoke, VRChat</li>
-                        <!-- <li><strong>PC Specs:</strong> Intel i9-9900KF, 64GB DDR4, RTX 2080ti, 5.5TB Storage.</li> -->
-                        <!--<li><strong>VR Specs:</strong> Meta Quest 3 modded with Eye Tracking and Finger Tracked Controllers.</li> -->
-						<br>
-                        <li><strong>About:</strong> Hi! I'm Skylar. I'm a Trans Woman living in the United States. I started experimenting with the Unity Game Engine in 2019, after getting my first desktop PC, and I dropped out in 2023 at 16 to pursue game development and programming as my career.</li>
-						<br>
-						<br>
-						<li><strong>Socials:</strong> <strong><a href="https://x.com/cometmbpkg">Twitter</a></strong>, <strong><a href="https://www.youtube.com/@cometmbpkg">Youtube</a></strong></li>
-					</ul>
+        <div class="panel">
+            <div class="panel-title"><span class="icon">◈</span> WHO AM I?</div>
+            <div class="about-grid">
+                <div class="avatar-frame">
+                    <!-- <div class="avatar-placeholder">☆</div>-->
+                    <img src="photos/IMG_7637_ICO.png" alt="A cool picture of me">
+                </div>
+                <ul class="info-list">
+                    <li><span class="label">Name:</span> Skylar</li>
+                    <li><span class="label">Pseudonym:</span> CometDev</li>
+                    <li><span class="label">Age:</span> 18</li>
+                    <li><span class="label">DOB:</span> Nov. 6th 2007</li>
+                    <li><span class="label">Pronouns:</span> She/Her</li>
+                    <li><span class="label">Specialties:</span> Unity Engine, C#</li>
+                    <li><span class="label">Hobbies:</span> Hardware Dev, 3D Modeling, Sim-Racing, Sim-Flying, Cosplay, Writing</li>
+                </ul>
+                <p class="about-text">
+                    Hi! I'm Skylar. I'm a Trans Woman living in the United States. I started experimenting with the Unity Game Engine in 2019, after getting my first desktop PC, and I dropped out of high-school in 2023 at 16 to get my GED and pursue game development and programming as my career.
+                </p>
+                <div class="socials">
+                    <span class="label">Socials:</span>
+                    <a href="https://x.com/cometmbpkg" target="_blank">Twitter</a>
+                    <a href="https://www.youtube.com/@cometmbpkg" target="_blank">YouTube</a>
+                    <a href="https://www.patreon.com/cometdev?vanity=user" target="_blank">Patreon</a>
                 </div>
             </div>
         </div>
 
-		<div class="other-stuff">
-			<h1>Check out the other pages:</h1>
-			
-			<div class="button-container">
-				<a href="projects.html"><button class="skylar-button">Projects</button></a>
-				<!--<button class="skylar-button">Blog</button>
-				<button class="skylar-button">Contact</button>-->
-			</div>
-		</div>
-<!--
-        <div class="public-diary">
-            <h2>Public Diary:</h2>
-			
-			
-            <div class="diary-entry">
-                <strong>10/10/2025</strong> - Began development on this very website in order to apply to work with more people due to financial trouble.
+        <div class="panel">
+            <div class="panel-title"><span class="icon">◈</span> EXPLORE</div>
+            <div class="page-links">
+                <a href="#blog" class="page-link" data-section="blog">✦ Blog</a>
+                <a href="#projects" class="page-link" data-section="projects">✦ Projects</a>
             </div>
-			
-			<div class="diary-entry">
-                <strong>08/25/2025</strong> - I founded my studio, Raging Atlas Games Studio, and begun work on <strong><a href="takedownvr.html">TakedownVR</a></strong>
-            </div>
-			
-			<div class="diary-entry">
-                <strong>08/10/2025</strong> - Began development on <strong><a href="fnafr.html">Five Nights at Freddy's: Reincarnation</a></strong>. A FNaF 1 Fangame in the form of a VRChat world.
-            </div>
-
-			<div class="diary-entry">
-                <strong>06/20/2025</strong> - Released my third VRChat Avatar, a port of LukaszModeler's Serial Designation J on my <strong><a href="https://payhip.com/CometDevsShop">Payhip</a></strong> in partnership with Lukasz.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>06/19/2025</strong> - Released my second VRChat Avatar, a port of LukaszModeler's Serial Designation V on my <strong><a href="https://payhip.com/CometDevsShop">Payhip</a></strong> in partnership with Lukasz.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>05/19/2025</strong> - Released my first VRChat Avatar, a port of LukaszModeler's Serial Designation N on my <strong><a href="https://payhip.com/CometDevsShop">Payhip</a></strong> in partnership with Lukasz.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>04/28/2025</strong> - Began development on <strong><a href="dandysworldvrc.html">Dandy's World in VRChat</a></strong>. A fully-fledged port of Dandy's World in VRChat.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>04/22/2024</strong> - Began work on <strong><a href="https://store.steampowered.com/app/2481930/Scamper/">Scamper</a> by <a href="https://bezbrogames.com/">Bezbro Games</a></strong> full time to help port the game over to Fish Networking and assist in developing the v20 updates and any other updates onward.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>10/17/2025</strong> - While working on Scamper, I experimented with <strong><a href="portablephysicsplayer.html">Portable Physics Player</a></strong>, a floating player controller that was designed to be modular enough to fit cleanly into any project it could be used for.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>10/10/2023</strong> - First Job! I was hired on by Bezbro to work on <strong><a href="https://store.steampowered.com/app/2481930/Scamper/">Scamper</a> by <a href="https://bezbrogames.com/">Bezbro Games</a></strong> and give it Multiplayer for a halloween update.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>10/01/2023</strong> - Began work on <strong><a href="Epsilon 11.html">Epsilon 11 VR</a></strong>, a (cancelled as of 2025) psychological horror shooter where you play as an MTF Agent in 4-player co-op.
-            </div>
-			
-			<div class="diary-entry">
-                <strong>Pre-2023</strong> - Before 2023 I was working on a project, the working title being "Intense Stress". It was a survival 4-player co-op game built around being a sandbox with as much shit as possible. Still a game I hope to make.
-            </div>
-            -->
         </div>
-    </div>
-	
+    </section>
 
+    <!-- ====== BLOG ====== -->
+    <section id="section-blog" class="hidden">
+        <div class="hero">
+            <div class="stars-row">★ ★ ★</div>
+            <h1>Dev Log</h1>
+            <p class="subtitle">Dispatches from the niche corners of gamedev</p>
+        </div>
 
+        <!-- Post list (populated by JS from manifest.json) -->
+        <div id="blog-list">
+            <div class="panel">
+                <div class="panel-title"><span class="icon">◈</span> LATEST POSTS</div>
+                <div id="blog-entries">
+                    <p style="color: var(--text-dim);">Loading posts...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single post view (populated by JS from posts/*.html) -->
+        <div id="blog-post-view" class="hidden">
+            <div class="panel">
+                <button class="back-btn" id="back-to-blog">← BACK</button>
+                <div class="post-header">
+                    <div class="blog-date" id="blog-post-date"></div>
+                    <h2 id="blog-post-title" class="post-title"></h2>
+                    <div class="blog-tags" id="blog-post-tags"></div>
+                </div>
+                <div class="post-body" id="blog-post-body"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section id="section-projects" class="hidden">
+        <div class="hero">
+            <div class="stars-row">★ ★ ★</div>
+            <h1>Projects</h1>
+            <p class="subtitle">Things I've built &amp; am building</p>
+        </div>
+        <div class="panel">
+            <div class="panel-title"><span class="icon">◈</span> MY WORK</div>
+            <p style="color: var(--text-dim); line-height: 1.7;">
+                Projects page coming soon — in the meantime, check out the original at
+                <a href="https://skylardev.xyz/projects.html" target="_blank" style="color: var(--accent-pink);">skylardev.xyz/projects</a>.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        Made with <span class="heart">♥</span> by Skylar // CometDev
+    </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

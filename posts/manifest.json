@@ -1,0 +1,10 @@
+﻿[
+  {
+    "id": "hello-world",
+    "title": "Hello World, My Blog is Live!",
+    "date": "2026.02.05",
+    "tags": ["meta", "gamedev"],
+    "excerpt": "I finally refreshed my site and added a blog so I can begin documenting gamedev stuff.",
+    "file": "posts/hello-world.html"
+  }
+]
