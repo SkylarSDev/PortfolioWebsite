@@ -1,5 +1,13 @@
 ﻿[
   {
+    "id": "vr-physics-networking",
+    "title": "Networking in VR Physics 101 in Unity",
+    "date": "2026.02.06",
+    "tags": ["gamedev", "networking", "physics"],
+    "excerpt": "First post, woohoo! Let's cover probably the hardest and least covered parts of VR Physics Development.",
+    "file": "posts/physics-networking.html"
+  },
+  {
     "id": "hello-world",
     "title": "Hello World, My Blog is Live!",
     "date": "2026.02.05",

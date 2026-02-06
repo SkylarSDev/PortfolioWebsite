@@ -1,0 +1,31 @@
+﻿<p>First post, woohoo! Let's cover probably the hardest and least covered parts of VR Physics Development.</p>
+<br>
+<h1>Networking in VR Physics in Unity</h1>
+<p>In all of my years in this space, I have seen maybe 5 instances of this, most of them never reaching past a tech demo. Notable mentions are <strong>Deadzone/Immersion Sector</strong>, <strong>BONEWORKS Multiplayer</strong>, <strong>BONEWORKS ENTANGLEMENT</strong>, <strong>BONELAB Fusion</strong>, and <strong>NervBox</strong>. I'm sure there are more that I don't know, I'm not omnipotent of course, but these are the biggest names I can think of.</p>
+<br>
+<p>Now, all of these projects use different approaches. However, the one I've personally dedicated myself and my R&D to is the one used <strong>Deadzone/Immersion Sector</strong> created by <strong>DrewMileham</strong> (you can find his links at the bottom of this page.) This approach is actually a very unique one, one I haven't seen used or employed out of this space before.</p>
+<br>
+<h3>The Theory</h3>
+<p>Let's start with the theory. It's very simple on paper. Conventionally, objects in games are synced by directly interpolating the transform's position and rotation values, and most-if-not-all VR games that support multiplayer today operate like this. However, it's not hard to see that this is either very buggy or very limiting. When it comes to interacting with a Physics Rig, things perform best if the interaction is as physical as possible, so, why not make the networking itself physical?</p>
+<br>
+<p>Instead of directly interpolating transforms, this theory proposes instead using a PD Controller (essentially your textbook PID Controller without the Integral, since it's not really needed for this) to utilize AddForce and AddTorque to track the object to wherever it needs to go, essentially a drop-in replacement for the interpolation. The reason for this is just as simple as the change; it allows for a stable amount of "slop" in the position/rotation that allows non-owners to interact and push the object around without it pushing back on them or jittering around unrealistically. For an extra bit of polish on this, it's best to switch between a normal interpolated system and the physics based on distance/interaction.</p>
+<br>
+<p>But that's only step one, the other half lies in the rig structure for the Network Players. Traditionally, even in physics-based setups, you sync the end result of whatever rig you setup, which normally ends up to something along the lines of networking the tracked head, left physics hand, and right physics hand. However, this doesn't work very well for the desired goal because, like the networked objects, you can't influence the hands if they aren't yours.</p>
+<br>
+<p>So, what I do is network JUST the tracking points, calculate both hands like normal, and preserving and networking the rig rigidbodies in the same way as above. This allows for, again, much smoother influence between players. What this also allows for, though, is Networked Joints, which is the next part of the puzzle.</p>
+<br>
+<p>Networked Joints are what make grabbing so nice in this solution. Thanks to simulating the hands for every player, you can network the creation and deletion of the grab joints. Mix this with the fact that the network pos/rot tracking isn't 100% accurate, and you get probably the closest you could ever get to directly networked physics in this use-case.</p>
+<br>
+<h3>My Take on The Theory.</h3>
+<p>My take on this theory simplifies things ever so slightly by swapping out the PD Controller for a much simpler, and theoretically lighter, Dampened Spring with mass-awareness. It takes a lot less tuning to do it this way. You just have to define the spring values for a mass of 1, and it scales to be the same strength and responsiveness for any mass without bugging out and exploding.</p>
+<p>And that's pretty much all the changes I've made. It's a REALLY robust system already. Though, as I'm writing this, I thought of the fact it should probably have the ability to directly set pos/rot if there's too much deviation, so there's that too.</p>
+
+<h3>The Method in Action</h3>
+TODO: VIDEOS AND DEMO HERE. I have a unity project in the works that implements this, it's just not done yet. with time.
+
+<h3>Downloads</h3>
+<p>BEFORE YOU STOP READING, there is no download available YET. I plan to release this, as well as a full kit for VR Physics Networking, in the future. I'll be detailing progress on that as I complete it, so stay tuned for it.</p>
+
+<h3>Final Credits:</h3>
+<p><strong>- DrewMileham (<a href="https://www.youtube.com/@drewmileham202">Youtube</a>, <a href="https://www.linkedin.com/in/drew-mileham-51a776221/">Linkedin</a>)</strong> for creating the original method detailed here, for walking me through it, and for being overall a really chill dude.</p>
+<p><strong>- TrontDev</strong> for inspiring me to make out this blog, being a great motivator, and creating the EOS Transport featured in the medias and demo.</p>
